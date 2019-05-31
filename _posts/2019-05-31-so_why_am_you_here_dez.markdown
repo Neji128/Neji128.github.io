@@ -1,7 +1,7 @@
 ---
 layout: post
-title:      "So...why am you here Dez?"
-date:       2019-05-31 22:23:06 +0000
+title:      "So...why are you here Dez?"
+date:       2019-05-31 18:23:07 -0400
 permalink:  so_why_am_you_here_dez
 ---
 

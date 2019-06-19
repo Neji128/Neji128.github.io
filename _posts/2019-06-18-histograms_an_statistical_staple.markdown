@@ -1,12 +1,12 @@
 ---
 layout: post
 title:      "Histograms: An Statistical Staple"
-date:       2019-06-18 22:51:14 +0000
+date:       2019-06-18 18:51:15 -0400
 permalink:  histograms_an_statistical_staple
 ---
 
 
-At this point in life, a vast majority of us have encountered a histogram. But, not everyone knows what information we can glean from them. Why do we even need histograms in the first place? What do histograms tell us?
+At this point in life, a majority of us have encountered a histogram. But, not everyone knows what information we can glean from them. Why do we even need histograms in the first place? What do histograms tell us?
 
 > ![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpQMf3v4xMuE7dzWnlsrJvMpdZ9JFizpzNzou9fYwoUro-rIC8) Photo on Imgur
 

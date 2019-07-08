@@ -8,7 +8,7 @@ permalink:  histograms_an_statistical_staple
 
 At this point in life, a majority of us have encountered a histogram. But, not everyone knows what information we can glean from them. Why do we even need histograms in the first place? What do histograms tell us?
 
-> ![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpQMf3v4xMuE7dzWnlsrJvMpdZ9JFizpzNzou9fYwoUro-rIC8) Photo on Imgur
+> ![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpQMf3v4xMuE7dzWnlsrJvMpdZ9JFizpzNzou9fYwoUro-rIC8) Photo from Imgur
 
 Histograms are a visual representation of frequency distributions, focusing on continuous data. These visualizations are especially useful for larger data sets. The area of each bar informs us of the frequency of occurrences within a bin, the range of divisions within a range of data, within the histogram. Additionally, histograms can identify outliers within raw data as well.
 

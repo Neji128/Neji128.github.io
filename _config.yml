@@ -1,11 +1,11 @@
 # Site settings
-author: Desmond Webb
-title: 
+author: Desmond W.
+title: Grumpy Analyst 
 header-img: img/home-bg.png
 email: webbdesmondj@gmail.com
-copyright_name: Desmond Webb
+copyright_name: Desmond W.
 description: > # this means to ignore newlines until "baseurl:"
-  
+  Musings of a fledgling data scientist
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  Neji128

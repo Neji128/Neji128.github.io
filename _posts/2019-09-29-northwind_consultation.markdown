@@ -7,12 +7,12 @@ permalink:  northwind_consultation
 
 As part of a project to review skills/understanding of exploratory data analysis (EDA), hypothesis testing, and communication with shareholders, I have been tasked with examining the Northwind Traders company and develop insights to help address growth issues.
 Northwind Traders is an international importer/exporter of food products. Northwind has experienced a remarkable growth period during their most recent months. 
-![](https://imgur.com/KGDqUIZ)
+![](https://imgur.com/RlkG7Dh.png) <br />
 
 This trend began in November of 2013 and continued until April of 2014. However, revenue has dropped considerably since then and I am tasked with examining the data they have provided to generate incites and recommendations to rectify this trend. 
 ## EDA
-To get a better idea of deeper understanding of this trend, I have calculated the average daily revenue intake for Northwind and visualized it below:
-![](https://imgur.com/Bvem3aH)
+To get a better idea of deeper understanding of this trend, I have calculated the average daily revenue intake for Northwind and visualized it below:<br />
+![](https://imgur.com/Bvem3aH.png)<br />
 In recent months revenue day to day has not fluctuated greatly despite the considerable increase in revenue during that time. This suggests that the customer base has expanded, leading to the increased revenue as opposed to higher quantities of product in each order driving the increase. 
 Plotting of each table within the database did not glean many useful insights as much of the data is categorical. Variables that were continuous were not normally distributed. As a result, non-parametric testing methods must be used to test our hypotheses.
 ## Hypothesis Testing
@@ -50,7 +50,7 @@ def monte(list1, list2, label):
 * one-tail test
 * H0: Discount amount plays no role in product quantity in an order.
 * H1: Discount amount significantly affects product quantity in an order. <br />
-![](https://imgur.com/UijCoXU)<br />
+![](https://i.imgur.com/UijCoXU.png)<br />
 H1 was supported. Discount level played a significant role in increased product quantity across orders. Additionally, this effect was significant across every level of discount. An interesting thing to note is that though 10% discounts significantly, affected product quantity, it was to a lesser extent than all other discount levels. Further investigation is needed to grasp why this is the case.
 <br />Recommendations: <br />
 •	Use discounts to manage inventory
@@ -60,7 +60,7 @@ o	may explain why 10% discounts display less efficacy
 * one-tail test
 * H0 Cereal/grains are not ordered at higher rates than other discounted items.
 * H1: Cereal/grains, category 5 products, are ordered in higher quantities than other is supported.
-![](https://imgur.com/idSrgiS)<br />
+![](https://imgur.com/idSrgiS.png)<br />
 H0 was supported.  Cereal/grain were ordered in lower quantities compared to other categories of discounted items. In fact, Cereal/grain, category 5, was the lowest performing category in this regard.
 <br />Recommendations: <br />
 •	discontinue this discount

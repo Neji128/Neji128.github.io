@@ -77,7 +77,7 @@ H0 was supported. Countries outside of the U.S. do not experience higher freight
 o	Make region a priority for marketing and exploratory sales
 ## What some categories of food product have higher discontinuation rates? <br />
 * one_tail test
-* $H_{0}$ No food categories have higher quatities of discontinued items.
-* $H_{1}$ Some food categories have hgiher quantities of discontinued items.* H1 Some food categories have higher quantities of discontinued items. <br />
+* H0: No food categories have higher quatities of discontinued items.
+* H1: Some food categories have hgiher quantities of discontinued items.* H1 Some food categories have higher quantities of discontinued items. <br />
 H0 was supported. No category of product was discontinued at a rate higher than the average. As such, no recommendations need be made.
 

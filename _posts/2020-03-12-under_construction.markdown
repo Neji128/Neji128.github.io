@@ -1,7 +1,7 @@
 ---
 layout: post
-title:      "UNDER CONSTRUCTION"
-date:       2020-03-12 08:16:21 +0000
+title:      "Generating .csv Files via Iteration"
+date:       2020-03-12 04:16:22 -0400
 permalink:  under_construction
 ---
 

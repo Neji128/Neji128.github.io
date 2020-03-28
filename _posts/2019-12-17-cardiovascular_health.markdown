@@ -67,7 +67,7 @@ result.summary()
 
 ![](https://i.imgur.com/wc2HRWd.png?1)
  
-Another great use for logistic regressions is that they allow us to look at interactions between variables as well. Examining interactions is an important aspect of EDA as it allows for deeper insights you can deliver to your target audience whomever that is. The example below illustrates this well: 
+Another great use for logistic regressions is examining interactions between variables as well. Interactions can be an important aspect of EDA; deeper insights can be developled for delivery target audience no matter their technical expertise. The example below illustrates this well: 
 
 ```
 X = population[['cholesterol', 'active']]

@@ -34,7 +34,7 @@ To examine trends within our data at the regional level, Folium was used to visu
 >    fill_color='RdPu',
 >    fill_opacity=0.7,
 >    line_opacity=0.2,
->    legend_name= 'BRFSS Respondants (SUM)').add_to(m)
+>    legend_name= 'BRFSS Respondents (SUM)').add_to(m)
 >
 >display(m)
 
@@ -46,26 +46,40 @@ Logistical regressions were used to examine recent mental, and to some extent, p
 
 Are recent displays of mental illness correlated with insurance coverage?
 
-*NOTE: Refusals to respond, 9, was omitted from the models to minimize noise while addressing multicollinearity. Example of final result below:
+*NOTE: Refusals to respond, 9, was omitted from the models to minimize noise while addressing multicollinearity. Example of final output below:
 
 ![](https://i.imgur.com/m5HoEZp.png)
 
-> clf_HLTHPLN1= BRFSS[['MENTHLTH', 'POORHLTH', 'QLMENTL2', 'MISTMNT', 'ADDEPEV2', 'DECIDE', 'HLTHPLN1']]
-> 
-> X = hlth_pln[['MENTHLTH', 'POORHLTH', 'QLMENTL2', 'MISTMNT', 'ADDEPEV2', 'DECIDE']]
-> y = hlth_pln['HLTHPLN1']
-> 
-> X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=0)
-> 
-> X = sm.tools.add_constant(X)
-> logit_model = sm.Logit(y, X)
-> result = logit_model.fit()
-> result.summary()
-
 ![](https://i.imgur.com/42kBXzO.png)
+
+
 ### Predicting Insurance Coverage and Recent Lack of Coverage
+A suite of classification models were run to determine which performed best. Subsequently, hyperparameter tuning was done to optimize the selected models. The classification models utilized in the present analysis are below in addition to an example a classification model with its various accuracies, classification report, and confusion matrices before and after parameter tuning:
+
+![](https://i.imgur.com/lpp5yrC.png)
+
+## Conclusions
+
+### U.S. Trends
+Respondents in the southeast region of the U.S. have a lower perceived general health relative to the rest of the country. Moreover, those in the southeast are more likely to have recent mental or physical issues that affect their quality of life and ability to make decisions. An interesting thing to note is participants in the west, i.e. CO, CA, despite having higher levels of self reported health, have higher than average recent mental or physical issues. 
 
 
+### Recent Mental Health and Insurance
+In regards to mental health and insurance coverage, some predictions can be made. Recent mental health issues can be used to predict insured status (insured vs uninsured). An interesting thing to note was that receiving mental health treatment did not correlate with insured status. Respondents are receiving treatment regardless of insured status. Additionally, recent mental health issues can predict a lack of coverage in the past 12 months. 
 
+### Predicting Insurance Status or Lack of Insurance
+When developing the final classification models, downsampling had to be employed due to the highly imbalanced class distributions. Though our regression findings were promising, they did not translate to quality predictive models as neither of the hypertuned models cleared a 50% validation accuracy. 
 
+![](https://i.imgur.com/H3oojqd.png?2)
+
+The low quality of data likely played a considerable role in the lack of predictive power the classifiers could muster.
+
+## Recommendations
+1. Transition the BRFSS to an online format. This will allow for easier data acquisition that requires less manpower. Additionally, when online people tend to answer more honestly to higher levels of perceived anonymity. This could help cut down on the number of participants that refused to answer questions about their health.
+2. Explore the use of an incentive to foster increased participation and honesty.  Money can be a good motivator but in small amounts so as not to skew responses.
+3. Subsequent analysis of perceived health and its relationship to recent physical and/or mental ailments in U.S. populations that tend to see themselves as healthier should be explored. 
+
+Though this analysis won’t quiet the current debates about mental health and insurance but, it can provide useful insights for a more informed discourse
+
+Cheers.
 
